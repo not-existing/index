@@ -1,0 +1,8 @@
+body {
+ background-image: url("../img/wallpaper.jpg");
+ background-color: #cccccc;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
