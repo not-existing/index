@@ -9,6 +9,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             
             navbar{
                 position: fixed;
+                width: 100%;
+                height: 40px;
+                background-color: black;
+                margin: 0;
+                padding: 0;
+                top: 0;
             }
             a{
                 color: white;
@@ -16,11 +22,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             }
             #list {
                 list-style-type: none;
-                margin: 0;
+                margin-top: -20px;
                 padding: 0;
                 width: 100%;
                 height: 40px;
-                background-color: black;
+                background-color: rgba(0, 0, 0, 0.4);
                 padding: 0;
                 color: white;
                 text-decoration: none; 
@@ -30,6 +36,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 margin: 0;
                 padding: 0;
                 text-decoration: none;
+                overflow-y: scroll;
+                height: 200vh;
+            }
+            #div1{
+                position: relative;
+                top: 40px;
             }
         </style>
         <title>Datortīkli</title>
@@ -44,17 +56,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <li><a href="internets.html">Saraksts</a></li>
             </ul>
         </nav>
-        <h1>Networks</h1>
-        <p1>Different types of networks:</p1>
-        <ul>
-            <li>PAN - personal area network</li>
-            <li>LAN - local area network</li>
-            <li>MAN - metropolitan area network</li>
-            <li>WAN - wide area network</li>
-        </ul>
-        <a href="https://www.simplilearn.com/tutorials/networking-tutorial/importance-of-types-of-networks-lan-man-wan">Source</a>
-        <br>
-        <a href="internets.html">Types of network</a>
-        <img src="img/network.png" alt="Network" style="width:341px;height:192px;">
+        <div class="div1">    
+            <h1>Networks</h1>
+            <p1>Different types of networks:</p1>
+            <ul>
+                <li>PAN - personal area network</li>
+                <li>LAN - local area network</li>
+                <li>MAN - metropolitan area network</li>
+                <li>WAN - wide area network</li>
+            </ul>
+            <a href="https://www.simplilearn.com/tutorials/networking-tutorial/importance-of-types-of-networks-lan-man-wan">Source</a>
+            <br>
+            <a href="internets.html">Types of network</a>
+            <img src="img/network.png" alt="Network" style="width:341px;height:192px;">
+        </div>
     </body>
 </html>
