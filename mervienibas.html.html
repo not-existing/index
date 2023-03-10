@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("img/cipari.jpg");
+                font-size: 20px;
+            }
+            form{
+                background-color: rgb(220, 220, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Informācijas daudzuma mērvienības</h1>
+        <form>
+            <p><input type="text" id="gb" name="gb">GB=</p>
+            <p><input type="button" value="Izteikt megabaitos" onClick='mega()'><input type="text" id="mb" name="mb">MB</p>
+            <p><input type="button" value="Izteikt mibibaitos" onClick='miba()'><input type="text" id="mib" name="mib">Mib</p>
+        </form>
+    </body>
+    <script>
+        function mega(){
+            document.getElementById("mb").value=document.getElementById("gb").value*1000;
+        }
+        function miba(){
+            document.getElementById("mib").value=document.getElementById("gb").value*953.674316;
+        }
+    </script>
+</html>
