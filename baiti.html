@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Aprēķināt cik daudz informācijas var lejupielādēt</p>
+        <p><input type="text" id="text" onfocus="reset()">sekundēs, ja interneta ātrums ir 25Mbps.</p>
+        <br>
+        <p>Atbilde</p>
+        <p><input type="text" id="answer"><input type="radio" id="kib" onClick="kib()">KiB<input type="radio" id="kb" onClick="kb()">KB</p>
+    </body>
+    <script>
+        function kib(){
+            document.getElementById("answer").value = document.getElementById("text").value*25*122.070312;
+        }
+        function kb(){
+            document.getElementById("answer").value = document.getElementById("text").value*25*125;
+        }
+        function reset(){
+            var getValue1 = document.getElementById("text");
+            if (getValue1.value !="") {
+                getValue1.value = "";
+            }
+            var getValue2 = document.getElementById("answer");
+            if (getValue2.value !="") {
+                getValue2.value = "";
+            }
+            var getValue3 = document.getElementById("kib");
+            getValue3.checked=false;
+            var getValue4 = document.getElementById("kb");
+            getValue4.checked=false;
+        }
+    </script>
+</html>
